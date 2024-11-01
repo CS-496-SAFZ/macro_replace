@@ -1,0 +1,121 @@
+/Users/frankxin/boost_1_82_0/bin.v2/libs/wave/tool/build/clang-darwin-13/release/threadapi-pthread/threading-multi/wavetool-on/test2.c:28:33: PI
+  /Users/frankxin/boost_1_82_0/bin.v2/libs/wave/tool/build/clang-darwin-13/release/threadapi-pthread/threading-multi/wavetool-on/test2.c:8:9: see macro definition: PI
+  [
+    3.14159
+    rescanning
+    [
+      3.14159
+    ]
+  ]
+/Users/frankxin/boost_1_82_0/bin.v2/libs/wave/tool/build/clang-darwin-13/release/threadapi-pthread/threading-multi/wavetool-on/test2.c:29:34: MAX_CAPACITY
+  /Users/frankxin/boost_1_82_0/bin.v2/libs/wave/tool/build/clang-darwin-13/release/threadapi-pthread/threading-multi/wavetool-on/test2.c:9:9: see macro definition: MAX_CAPACITY
+  [
+    256
+    rescanning
+    [
+      256
+    ]
+  ]
+/Users/frankxin/boost_1_82_0/bin.v2/libs/wave/tool/build/clang-darwin-13/release/threadapi-pthread/threading-multi/wavetool-on/test2.c:33:25: SQUARE(num)
+  /Users/frankxin/boost_1_82_0/bin.v2/libs/wave/tool/build/clang-darwin-13/release/threadapi-pthread/threading-multi/wavetool-on/test2.c:12:9: see macro definition: SQUARE(x)
+  invoked with
+  [
+    x = num
+  ]
+  [
+    ((num) * (num))
+    rescanning
+    [
+      ((num) * (num))
+    ]
+  ]
+/Users/frankxin/boost_1_82_0/bin.v2/libs/wave/tool/build/clang-darwin-13/release/threadapi-pthread/threading-multi/wavetool-on/test2.c:34:25: TRIPLE(num)
+  /Users/frankxin/boost_1_82_0/bin.v2/libs/wave/tool/build/clang-darwin-13/release/threadapi-pthread/threading-multi/wavetool-on/test2.c:13:9: see macro definition: TRIPLE(x)
+  invoked with
+  [
+    x = num
+  ]
+  [
+    ((num) * 3)
+    rescanning
+    [
+      ((num) * 3)
+    ]
+  ]
+/Users/frankxin/boost_1_82_0/bin.v2/libs/wave/tool/build/clang-darwin-13/release/threadapi-pthread/threading-multi/wavetool-on/test2.c:35:26: ADD_ONE(num)
+  /Users/frankxin/boost_1_82_0/bin.v2/libs/wave/tool/build/clang-darwin-13/release/threadapi-pthread/threading-multi/wavetool-on/test2.c:14:9: see macro definition: ADD_ONE(x)
+  invoked with
+  [
+    x = num
+  ]
+  [
+    ((num) + 1)
+    rescanning
+    [
+      ((num) + 1)
+    ]
+  ]
+/Users/frankxin/boost_1_82_0/bin.v2/libs/wave/tool/build/clang-darwin-13/release/threadapi-pthread/threading-multi/wavetool-on/test2.c:42:36: DOUBLE_AND_SQUARE(num)
+  /Users/frankxin/boost_1_82_0/bin.v2/libs/wave/tool/build/clang-darwin-13/release/threadapi-pthread/threading-multi/wavetool-on/test2.c:22:9: see macro definition: DOUBLE_AND_SQUARE(x)
+  invoked with
+  [
+    x = num
+  ]
+  [
+    SQUARE(TRIPLE(num))
+    rescanning
+    [
+      /Users/frankxin/boost_1_82_0/bin.v2/libs/wave/tool/build/clang-darwin-13/release/threadapi-pthread/threading-multi/wavetool-on/test2.c:12:9: see macro definition: SQUARE(x)
+      invoked with
+      [
+        x = TRIPLE(num)
+      ]
+      [
+        /Users/frankxin/boost_1_82_0/bin.v2/libs/wave/tool/build/clang-darwin-13/release/threadapi-pthread/threading-multi/wavetool-on/test2.c:13:9: see macro definition: TRIPLE(x)
+        invoked with
+        [
+          x = num
+        ]
+        [
+          ((num) * 3)
+          rescanning
+          [
+            ((num) * 3)
+          ]
+        ]
+        ((((num) * 3)) * (((num) * 3)))
+        rescanning
+        [
+          ((((num) * 3)) * (((num) * 3)))
+        ]
+      ]
+      ((((num) * 3)) * (((num) * 3)))
+    ]
+  ]
+/Users/frankxin/boost_1_82_0/bin.v2/libs/wave/tool/build/clang-darwin-13/release/threadapi-pthread/threading-multi/wavetool-on/test2.c:46:9: MAKE_UNIQUE_VAR(myVar,  1)
+  /Users/frankxin/boost_1_82_0/bin.v2/libs/wave/tool/build/clang-darwin-13/release/threadapi-pthread/threading-multi/wavetool-on/test2.c:19:9: see macro definition: MAKE_UNIQUE_VAR(prefix, num)
+  invoked with
+  [
+    prefix = myVar
+    num =  1
+  ]
+  [
+    CONCAT(myVar,  1)
+    rescanning
+    [
+      /Users/frankxin/boost_1_82_0/bin.v2/libs/wave/tool/build/clang-darwin-13/release/threadapi-pthread/threading-multi/wavetool-on/test2.c:17:9: see macro definition: CONCAT(x, y)
+      invoked with
+      [
+        x = myVar
+        y =  1
+      ]
+      [
+        myVar1
+        rescanning
+        [
+          myVar1
+        ]
+      ]
+      myVar1
+    ]
+  ]

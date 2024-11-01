@@ -1,0 +1,76 @@
+[
+    {
+        "calling_line_number": "28",
+        "definition_line_number": "12",
+        "macro_name": "SQUARE",
+        "parameters": [
+            "x"
+        ],
+        "invoked_with": {
+            "x": "num"
+        },
+        "expansion": "((num) * (num))"
+    },
+    {
+        "calling_line_number": "34",
+        "definition_line_number": "13",
+        "macro_name": "TRIPLE",
+        "parameters": [
+            "x"
+        ],
+        "invoked_with": {
+            "x": "num"
+        },
+        "expansion": "((num) * 3)"
+    },
+    {
+        "calling_line_number": "35",
+        "definition_line_number": "14",
+        "macro_name": "ADD_ONE",
+        "parameters": [
+            "x"
+        ],
+        "invoked_with": {
+            "x": "num"
+        },
+        "expansion": "((num) + 1)"
+    },
+    {
+        "calling_line_number": "42",
+        "definition_line_number": "22",
+        "macro_name": "DOUBLE_AND_SQUARE",
+        "parameters": [
+            "x"
+        ],
+        "invoked_with": {
+            "x": "num"
+        },
+        "expansion": "SQUARE(TRIPLE(num))"
+    },
+    {
+        "calling_line_number": "12",
+        "definition_line_number": "13",
+        "macro_name": "TRIPLE",
+        "parameters": [
+            "x"
+        ],
+        "invoked_with": {
+            "x": "num"
+        },
+        "expansion": "((num) * 3)"
+    },
+    {
+        "calling_line_number": "46",
+        "definition_line_number": "19",
+        "macro_name": "MAKE_UNIQUE_VAR",
+        "parameters": [
+            "prefix",
+            "num"
+        ],
+        "invoked_with": {
+            "prefix": "myVar",
+            "num": "1"
+        },
+        "expansion": "CONCAT(myVar,  1)"
+    }
+]

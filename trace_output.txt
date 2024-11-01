@@ -1,0 +1,80 @@
+/Users/frankxin/boost_1_82_0/bin.v2/libs/wave/tool/build/clang-darwin-13/release/threadapi-pthread/threading-multi/wavetool-on/test.c:23:33: PI
+  /Users/frankxin/boost_1_82_0/bin.v2/libs/wave/tool/build/clang-darwin-13/release/threadapi-pthread/threading-multi/wavetool-on/test.c:8:9: see macro definition: PI
+  [
+    3.14159
+    rescanning
+    [
+      3.14159
+    ]
+  ]
+/Users/frankxin/boost_1_82_0/bin.v2/libs/wave/tool/build/clang-darwin-13/release/threadapi-pthread/threading-multi/wavetool-on/test.c:24:37: MAX_BUFFER_SIZE
+  /Users/frankxin/boost_1_82_0/bin.v2/libs/wave/tool/build/clang-darwin-13/release/threadapi-pthread/threading-multi/wavetool-on/test.c:9:9: see macro definition: MAX_BUFFER_SIZE
+  [
+    1024
+    rescanning
+    [
+      1024
+    ]
+  ]
+/Users/frankxin/boost_1_82_0/bin.v2/libs/wave/tool/build/clang-darwin-13/release/threadapi-pthread/threading-multi/wavetool-on/test.c:25:34: DEFAULT_PORT
+  /Users/frankxin/boost_1_82_0/bin.v2/libs/wave/tool/build/clang-darwin-13/release/threadapi-pthread/threading-multi/wavetool-on/test.c:10:9: see macro definition: DEFAULT_PORT
+  [
+    8080
+    rescanning
+    [
+      8080
+    ]
+  ]
+/Users/frankxin/boost_1_82_0/bin.v2/libs/wave/tool/build/clang-darwin-13/release/threadapi-pthread/threading-multi/wavetool-on/test.c:29:25: SQUARE(num)
+  /Users/frankxin/boost_1_82_0/bin.v2/libs/wave/tool/build/clang-darwin-13/release/threadapi-pthread/threading-multi/wavetool-on/test.c:13:9: see macro definition: SQUARE(x)
+  invoked with
+  [
+    x = num
+  ]
+  [
+    ((num) * (num))
+    rescanning
+    [
+      ((num) * (num))
+    ]
+  ]
+/Users/frankxin/boost_1_82_0/bin.v2/libs/wave/tool/build/clang-darwin-13/release/threadapi-pthread/threading-multi/wavetool-on/test.c:30:25: DOUBLE(num)
+  /Users/frankxin/boost_1_82_0/bin.v2/libs/wave/tool/build/clang-darwin-13/release/threadapi-pthread/threading-multi/wavetool-on/test.c:14:9: see macro definition: DOUBLE(x)
+  invoked with
+  [
+    x = num
+  ]
+  [
+    ((num) + (num))
+    rescanning
+    [
+      ((num) + (num))
+    ]
+  ]
+/Users/frankxin/boost_1_82_0/bin.v2/libs/wave/tool/build/clang-darwin-13/release/threadapi-pthread/threading-multi/wavetool-on/test.c:36:9: MAKE_VAR_NAME(var,  1)
+  /Users/frankxin/boost_1_82_0/bin.v2/libs/wave/tool/build/clang-darwin-13/release/threadapi-pthread/threading-multi/wavetool-on/test.c:19:9: see macro definition: MAKE_VAR_NAME(prefix, num)
+  invoked with
+  [
+    prefix = var
+    num =  1
+  ]
+  [
+    CONCAT(var,  1)
+    rescanning
+    [
+      /Users/frankxin/boost_1_82_0/bin.v2/libs/wave/tool/build/clang-darwin-13/release/threadapi-pthread/threading-multi/wavetool-on/test.c:18:9: see macro definition: CONCAT(x, y)
+      invoked with
+      [
+        x = var
+        y =  1
+      ]
+      [
+        var1
+        rescanning
+        [
+          var1
+        ]
+      ]
+      var1
+    ]
+  ]
