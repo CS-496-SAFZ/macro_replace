@@ -46,6 +46,7 @@ def parse_function_macros(text):
         expansion = match.group(6).strip()
       
         macros_list.append({
+            "type": "function",
             "calling_line_number": calling_line_num,
             "definition_line_number": definition_line_num,
             "macro_name": macro_name,
@@ -85,7 +86,6 @@ def parse_trace(chunks):
         function_macros = parse_function_macros(chunk)
 
         if (function_macros):
-            print(function_macros)
             macros.extend(function_macros)
         else:
             constant_macros = parse_constant_macros(chunk)

@@ -14,6 +14,7 @@
         "expansion": "256"
     },
     {
+        "type": "function",
         "calling_line_number": "33",
         "definition_line_number": "12",
         "macro_name": "SQUARE",
@@ -26,6 +27,7 @@
         "expansion": "((num) * (num))"
     },
     {
+        "type": "function",
         "calling_line_number": "34",
         "definition_line_number": "13",
         "macro_name": "TRIPLE",
@@ -38,6 +40,7 @@
         "expansion": "((num) * 3)"
     },
     {
+        "type": "function",
         "calling_line_number": "35",
         "definition_line_number": "14",
         "macro_name": "ADD_ONE",
@@ -50,6 +53,7 @@
         "expansion": "((num) + 1)"
     },
     {
+        "type": "function",
         "calling_line_number": "42",
         "definition_line_number": "22",
         "macro_name": "DOUBLE_AND_SQUARE",
@@ -62,6 +66,7 @@
         "expansion": "SQUARE(TRIPLE(num))"
     },
     {
+        "type": "function",
         "calling_line_number": "12",
         "definition_line_number": "13",
         "macro_name": "TRIPLE",
@@ -74,6 +79,7 @@
         "expansion": "((num) * 3)"
     },
     {
+        "type": "function",
         "calling_line_number": "46",
         "definition_line_number": "19",
         "macro_name": "MAKE_UNIQUE_VAR",
