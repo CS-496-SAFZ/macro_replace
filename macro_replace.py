@@ -1,3 +1,6 @@
+### call `python ./macro_replace` to translate a file at `./input.c`
+### call `python ./macro_replace PATH.c` to translate a file at `PATH.c` 
+
 import os
 import sys
 import time
