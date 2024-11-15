@@ -2,3 +2,4 @@
 *.trace
 config.json
 wave
+.vscode/
