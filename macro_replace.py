@@ -5,6 +5,8 @@ import os
 import sys
 import time
 import json
+import subprocess
+import platform
 
 ast = {}            # Clang's AST
 macros = {}         # macro definition information
@@ -20,6 +22,22 @@ if (len(sys.argv) > 1):
         if (arg[-2:] == ".c"):
             fp = arg
 
+def RunWave():
+    if (platform.system() == "Windows"):
+        os.system(f'wave -t {fp[:-1]}trace {fp} >/dev/null')
+    else:
+        with open("config.json", "r") as config_file:
+            config = json.load(config_file)
+            dyld_path = ":".join(config["DYLD_LIBRARY_PATH"])
+            env = os.environ.copy()
+            env["DYLD_LIBRARY_PATH"] = dyld_path
+
+        try:
+            # TODO: this is returning exit status 254 but wave dump is generated correctly 
+            subprocess.run(["./wave", "-t", f"{fp[:-1]}trace", fp], env=env, stdout=subprocess.DEVNULL, check=True)
+        except Exception as e:
+            print(e)
+
 '''
 Generate wave trace and clang AST
 '''
@@ -29,7 +47,7 @@ with open(fp, 'r+') as cfile:
     if (cfile.readline() != "#pragma wave trace(enable)\n"):
         cfile.seek(0, 0)
         cfile.write('#pragma wave trace(enable)\n' + source)
-    os.system(f'wave -t {fp[:-1]}trace {fp} >/dev/null')
+    RunWave()
     os.system(f'clang -Xclang -ast-dump=json -fsyntax-only {fp} > {fp[:-1]}ast')
     cfile.close()
 time.sleep(0.01) # idk if this is needed or not

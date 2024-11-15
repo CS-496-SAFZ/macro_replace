@@ -1,0 +1,12 @@
+{
+  "DYLD_LIBRARY_PATH": [
+    "/path/to/boost/libs/chrono",
+    "/path/to/boost/libs/serialization",
+    "/path/to/boost/libs/program_options",
+    "/path/to/boost/libs/filesystem",
+    "/path/to/boost/libs/atomic",
+    "/path/to/boost/libs/system",
+    "/path/to/boost/libs/wave",
+    "/path/to/boost/libs/thread"
+  ]
+}

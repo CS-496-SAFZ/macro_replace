@@ -1,0 +1,4 @@
+*.ast
+*.trace
+config.json
+wave
